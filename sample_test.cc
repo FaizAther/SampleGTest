@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
-#include "factorial.h"
-#include "fib.h"
+#include "factorial.hh"
+#include "fib.hh"
 #include <deque>
 
 #include <gmock/gmock-matchers.h>

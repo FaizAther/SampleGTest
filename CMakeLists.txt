@@ -25,7 +25,21 @@ target_link_libraries(
   GTest::gtest_main
 )
 
+add_executable(
+  sample_mock
+  sample_mock.cc
+)
+target_link_libraries(
+  sample_mock
+  GTest::gtest_main
+  GTest::gmock_main
+)
+
+
+
 include(GoogleTest)
 gtest_discover_tests(sample_test)
+
+gtest_discover_tests(sample_mock)
 
 set(CMAKE_BUILD_TYPE Debug)
